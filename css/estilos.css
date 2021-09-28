@@ -1,0 +1,337 @@
+@font-face{
+    font-family: trajan-regular;
+    src: url(../fonts/TrajanPro3-Regular.otf);
+}
+
+@font-face{
+    font-family: trajan-bold;
+    src: url(../fonts/TrajanPro3-Bold.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: grey;
+}
+
+
+/*---------------------Navegador---------------------*/
+header{
+    position: fixed;
+    width: 100%;
+    background: rgb(250, 250, 250);
+    z-index: 1;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.cont_menu{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+nav>ul>li{
+    display: inline-block;
+}
+
+nav>ul>li>a{
+    font-family: trajan-regular;
+    color: rgb(15, 15, 15);
+    display: block;
+    padding: 0.7rem 1rem 0.5rem 1rem;
+    transition: all 0.3s linear;
+    border-radius: 3px;
+}
+
+#btn-registrar{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: 1px rgb(15, 15, 15) solid;
+}
+
+#btn-registrar:hover{
+    background-color: rgb(250, 250, 250);
+    color: rgba(15, 15, 15);
+}
+
+nav>ul>li>a:hover{
+    color: rgba(15, 15, 15, 0.5);
+}
+
+
+/*---------------------cuerpo---------------------*/
+main{
+    padding-top: 77.7px;
+    background: rgb(230, 230, 230);    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bloque-img{
+    margin: 0px 10px 0px 10px;
+    background: rgb(15, 15, 15);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-leyenda{
+    background: rgba(15, 15, 15, 0.9);
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+img{
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.leyenda-text > h1{
+    font-family: trajan-regular;
+    font-size: xx-large;
+}
+
+.leyenda-text > p{
+    font-family: system-ui;
+    font-size: large;
+}
+
+.leyenda-text > a{
+    font-family: trajan-regular;
+
+}
+
+.bloque-img:hover > .img-leyenda{
+    opacity: 1;
+    visibility: visible;
+}
+
+.bloque-img:hover > img{
+    height: 103%;
+}
+
+.bloque-img-2{
+    background: rgb(15, 15, 15);
+    width: calc(50% - 15px);
+}
+
+#cuadro_mujeres{
+    margin: 10px 5px 0px 10px;
+}
+
+#cuadro_hombres{
+    margin: 10px 10px 0px 5px;
+}
+
+.leyenda-text{
+    width: 35%;
+    text-align: left;
+}
+
+.leyenda-text-2{
+    width: 55%;
+}
+
+.leyenda-text > a{
+    padding: 0.7rem 1rem 0.5rem 1rem;
+    border-radius: 3px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: 1px white solid;
+    transition: all 0.3s linear;
+}
+
+.leyenda-text > a:hover{
+    background-color: rgb(250, 250, 250);
+    color: rgba(15, 15, 15);
+}
+
+
+footer{
+    width: 100%;
+    background: rgb(250, 250, 250);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-center;
+}
+
+.caja-logos{
+    display: flex;
+    margin: 10px 0;
+    width: 70%;
+    justify-content: space-around;
+
+}
+
+.cont-foot > div > div{
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+}
+
+.cont-foot > h2{
+    font-family: trajan-regular;
+    color: rgb(15, 15, 15);
+    align-items: center;
+    display: block;
+}
+
+.cont-foot > p{
+    display: block;
+    font-family: system-ui;
+    color: rgb(15, 15, 15);
+}
+
+.cont-foot > a{
+    display: block;
+    font-family: system-ui;
+    color: rgb(15, 15, 15);
+    text-decoration: underline;
+}
+
+.cont-foot > p{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cont-foot > a{
+    font-size: small;
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+.caja-logos > div > a:hover .img-redsocial{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*formulario*/
+fieldset{
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+form{
+    color: rgb(15, 15, 15);
+    padding: 40px;
+    width: 40%;
+    font-family: trajan-regular;
+    font-size: 12px;
+    background: rgb(250, 250, 250);
+    border-radius: 20px;
+}
+
+form>h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input{
+    color: rgb(15, 15, 15);
+    background-color: rgba(15, 15, 15, 0.1);
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-family: califi-regular;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#btn-submit-form{
+    font-family: trajan-regular;
+    color: rgb(15, 15, 15);
+    display: block;
+    transition: all 0.3s linear;
+    border-radius: 3px;
+    background-color: #0f0f0f;
+    color: white;
+    border: 1px #0f0f0f solid;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 30px;
+}
+
+#btn-submit-form:hover{
+    background-color: rgb(250, 250, 250);
+    color: rgba(15, 15, 15);
+    cursor: pointer;
+}
+
+.back{
+    background: violet;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+fieldset{
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
